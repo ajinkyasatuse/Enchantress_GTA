@@ -1,4 +1,4 @@
-# 🎙️ Enchantress System: GTA Vice City Edition
+# 🎙️ Enchantress System: GTA Edition
 
 A zero-latency, hardware-level voice command engine built in C#. 
 
@@ -34,3 +34,22 @@ Standard macro applications (using `SendKeys` or standard virtual key events) fa
 1. Clone this repository:
    ```bash
    git clone [https://github.com/ajinkyasatuse/Enchantress_GTA.git](https://github.com/ajinkyasatuse/Enchantress_GTA.git)
+   
+## 🎤 How to Play (Hands-Free Mode)
+**CRITICAL:** You must run your terminal (Command Prompt or PowerShell) as an Administrator. Without elevated privileges, Windows will block the simulated hardware inputs from reaching the game window.
+Once the terminal in rootfolder, run : **dotnet run**, Once sucessfull, it will state: **Enchantress is listening...** , leave it running in the background and launch GTA Vice City. You do not need to press any manual keys or use a controller. The system continuously monitors your microphone. **Simply play the game and speak the commands out loud.** The background engine will automatically recognize your voice and translate it into hardware keystrokes in real-time, controlling Tommy hands-free.
+
+## 🎮 Command List
+Make sure the GTA game window is currently active/in-focus, and speak clearly:
+| Voice Command | Action | Key/Macro |
+| :--- | :--- | :--- |
+| **"Walk forward"** | Holds W key continuously | `DIK_W` |
+| **"Walk back"** | Holds S key continuously | `DIK_S` |
+| **"Turn left"** | Pans camera left | Mouse `dx -400` |
+| **"Turn right"** | Pans camera right | Mouse `dx 400` |
+| **"Stop"** | Releases all active keys | - |
+| **"Jump"** | Taps Spacebar | `DIK_SPACE` |
+| **"Get in" / "Drive"** | Taps F (Enter/Exit vehicle) | `DIK_F` |
+| **"Panzer"** | Spawns a Rhino Tank | Types `PANZER` |
+| **"Aspirin"** | Full Health | Types `ASPIRIN` |
+| **"Leave me alone"**| Clears Wanted Level | Types `LEAVEMEALONE` |
